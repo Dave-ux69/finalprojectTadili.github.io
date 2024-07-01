@@ -207,8 +207,10 @@ form {
 .about-image img {
     max-width: 100%;
     height: auto;
-    display: block;
+    border-radius: 20px;
+    display: inline-block;
     transition: 0.5 ease;
+    align-items: center;
 }
 
 footer {
