@@ -1,0 +1,160 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carinderia ni Tadili</title>
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Playwrite+MX:wght@100..400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles_home.css">
+    
+</head>
+<body>
+    <header class="header">
+        <i class="fab fa-facebook-f"></i>
+        <i class="fa fa-envelope-open" aria-hidden="true"></i>
+        <i class="fa fa-credit-card-alt" aria-hidden="true"></i>
+        <i class="fa fa-barcode" aria-hidden="true"></i>
+        <i class="fa fa-address-book" aria-hidden="true"></i>
+    </header>
+    <div class="w3-bar w3-black w3-bar-item-spacing">
+        <div class="left">
+            <a href="#"><img src="images/img.1.png" class="logo"></a>
+        </div>
+        <div class="center">
+            <a href="home.html" class="w3-bar-item w3-button w3-mobile">Home</a>
+            <a href="aboutme.html" class="w3-bar-item w3-button w3-mobile">About Us</a>
+            <a href="https://g.co/kgs/eeGDNbe" class="w3-bar-item w3-button w3-mobile">Store Location</a>
+            <a href="product.html" class="w3-bar-item w3-button w3-mobile">Product</a>
+            
+        </div>
+        <form id="form"> 
+            <input type="search" id="query" name="q" placeholder="Search...">
+          </form>
+          <div class="cta-container">
+            
+            <a href="login.html"><button-1>Login</button-1></a>
+            </div>
+    </div>
+    <section class="home" id="home">
+    <div class="swiper-container home-slider">
+        <div class="swiper-wrapper wrapper">
+        <div class="swiper-slide slide">
+            <div class="content">
+                <span>Your Dish</span>
+                <h3>Beef Pares</h3>
+                <p>Best Seller</p>
+                <a href="product.html" class="btn">Order now</a>
+            </div>
+            <div class="image">
+                <img src="images/pares.slider.jpg" alt="pares">
+            </div>
+        </div>
+        <div class="swiper-slide slide">
+            <div class="content">
+                <span>Your dish</span>
+                <h3>Lumpia Silog</h3>
+                <p>Best Seller</p>
+                <a href="product.html" class="btn">Order now</a>
+            </div>
+            <div class="image">
+                <img src="images/lumpia-slider.jpg" alt="lumpia">
+            </div>
+        </div>
+        <div class="swiper-slide slide">
+            <div class="content">
+                <span>Your dish</span>
+                <h3>Beef Mami</h3>
+                <p>Best seller</p>
+                <a href="product.html" class="btn">Order now</a>
+            </div>
+            <div class="image">
+                <img src="images/beefmami-slider.jpg" alt="beefmami">
+            </div>
+        </div>
+        </div>
+        <div class="swiper-pagination"></div>
+    </div>
+</section>
+               <footer>
+                <div class="footer-container">
+                    <div class="logo">
+                        <img src="images/img.1.png" alt="Tadili">
+                    </div>
+                    <div class="footer-description">
+                        <p>Welcome to Carinderia ni Tadili! Here, we offer high-quality food that appeals to a broad consumer base rather than just the typical street fare.</p>
+                    </div>
+                    <div class="navigation">
+                        <ul>
+                            <li><a href="home.html">Home</a></li>
+                            <li><a href="aboutme.html">About Us</a></li>
+                            <li><a href="product.html">Products</a></li>
+                            <li><a href="#">Franchising</a></li>
+                            <li><a href="https://g.co/kgs/eeGDNbe">Store Location</a></li>
+                            <li><a href="images/sisigsilog.jpg">What's New</a></li>
+                            <li><a href="#">Videos</a></li>
+                            <li><a href="#">Contact Us</a></li>
+                        </ul>
+                    </div>
+                    <div class="social-media">
+                        <a href="https://web.facebook.com/profile.php?id=100057534006288"><ion-icon size="large" name="logo-facebook"></ion-icon></a>
+                        <a href="https://www.instagram.com/"><ion-icon size="large" name="logo-instagram"></ion-icon></a>
+                        <a href="https://www.tiktok.com/"><ion-icon size="large" name="logo-tiktok"></ion-icon></a>
+                    </div>
+                </div>
+            </footer>
+    
+    
+            <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+            <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+            <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+    <script>
+        var swiper = new Swiper(".Home-slider   ", {
+        spaceBetween: 30,
+        centeredSlides: true,
+        autoplay: {
+            delay: 7500,
+            disableOnInteraction: false,
+        },
+        pagination: {
+            el: ".swiper-pagination",
+            clickable: true,
+            loop:true,
+        },
+        navigation: {
+            nextEl: ".swiper-button-next",
+            prevEl: ".swiper-button-prev",
+        },
+        });
+        
+        document.addEventListener('DOMContentLoaded', function() {
+            const learnMoreButtons = document.querySelectorAll('.learn-more-button');
+            const popups = document.querySelectorAll('.popup');
+
+            learnMoreButtons.forEach((button, index) => {
+                button.addEventListener('click', function() {
+                    popups[index].classList.toggle('active');
+                });
+            });
+        });
+        document.addEventListener('DOMContentLoaded', function() {
+                const footerLinks = document.querySelectorAll('.footer-column ul li a');
+
+                footerLinks.forEach(link => {
+                    link.addEventListener('click', function(event) {
+                        event.preventDefault();
+                        const url = this.getAttribute('href');
+                        window.open(url, 'https://www.google.com/');
+                    });
+                });
+            });
+    </script>
+</body>
+</html>
+
+

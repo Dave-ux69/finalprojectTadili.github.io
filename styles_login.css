@@ -1,0 +1,83 @@
+body {
+    background-color: #252525;
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.login-container {
+    text-align: center;
+    color: #fff;
+}
+
+.login-box {
+    text-align: center;
+    padding: 20px;
+    border-radius: 10px;
+    
+}
+
+.logo {
+    width: 100px;
+    margin-bottom: 20px;
+}
+
+.input-group {
+    margin-bottom: 15px;
+    text-align: left;
+}
+
+.input-group label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+.input-group input[type="text"],
+.input-group input[type="password"] {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    outline: none;
+}
+
+.input-group input[type="checkbox"] {
+    margin-right: 10px;
+}
+
+.input-group a {
+    color: #1e90ff;
+    text-decoration: none;
+}
+
+button {
+    width: 100%;
+    padding: 10px;
+    background: #1e90ff;
+    border: none;
+    border-radius: 5px;
+    color: #fff;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+button:hover {
+    background: #1c86ee;
+}
+
+.footer-links, .social-links {
+    margin-top: 20px;
+}
+
+.footer-links a, .social-links a {
+    color: #fff;
+    text-decoration: none;
+    margin: 0 5px;
+}
+
+.footer-links a:hover, .social-links a:hover {
+    text-decoration: underline;
+}

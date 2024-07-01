@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Page</title>
+    <link rel="stylesheet" href="styles_login.css">
+</head>
+<body>
+    <div class="login-container">
+        <div class="login-box">
+            <form id="loginForm">
+                <div class="input-group">
+                    <label for="username">Username</label>
+                    <input type="text" id="username" name="username" required>
+                </div>
+                <div class="input-group">
+                    <label for="password">Password</label>
+                    <input type="password" id="password" name="password" required>
+                </div>
+                <div class="input-group">
+                    <input type="checkbox" id="stay-signed-in" name="stay-signed-in">
+                    <label for="stay-signed-in">Stay signed in</label>
+                </div>
+                <div class="input-group">
+                    <a href="forgot-password">Forgot Password?</a>
+                </div>
+                <a href="home.html"><button type="button" onclick="login()">Log In</button></a>
+            </form>
+            <div class="footer-links">
+                <a href="help">Help</a> |
+                <a href="https://www.instructure.com/policies/product-privacy-policy">Privacy Policy</a> |
+                <a href="https://www.instructure.com/policies/canvas-lms-cookie-notice">Cookie Notice</a> |
+                <a href="https://feu.instructure.com/login/canvas#">Acceptable Use Policy</a>
+            </div>
+            <div class="social-links">
+                <a href="https://www.facebook.com">Facebook</a> |
+                <a href="https://x.com">X.com</a>
+            </div>
+        </div>
+    </div>
+    <script>
+        function login() {
+            const username = document.getElementById('username').value;
+            const password = document.getElementById('password').value;
+
+            if (username && password) {
+                alert(`Username: ${username}\nPassword: ${password}`);
+            } else {
+                alert('Please enter both username and password.');
+            }
+        }
+    </script>
+</body>
+</html>

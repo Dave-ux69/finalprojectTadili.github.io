@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carinderia ni Tadili</title>
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Playwrite+NG+Modern:wght@100..400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles_aboutme.css">
+    
+</head>
+<body>
+    
+    <header class="header">
+        <i class="fab fa-facebook-f"></i>
+        <i class="fa fa-envelope-open" aria-hidden="true"></i>
+        <i class="fa fa-credit-card-alt" aria-hidden="true"></i>
+        <i class="fa fa-barcode" aria-hidden="true"></i>
+        <i class="fa fa-address-book" aria-hidden="true"></i>
+    </header>
+    <div class="w3-bar w3-black w3-bar-item-spacing">
+        <div class="left">
+            <a href="#"><img src="images/img.1.png" class="logo"></a>
+        </div>
+        <div class="center">
+            <a href="home.html" class="w3-bar-item w3-button w3-mobile">Home</a>
+            <a href="aboutme.html" class="w3-bar-item w3-button w3-mobile">About Us</a>
+            <a href="https://g.co/kgs/eeGDNbe" class="w3-bar-item w3-button w3-mobile">Store Location</a>
+            <a href="product.html" class="w3-bar-item w3-button w3-mobile">Product</a>
+            
+        </div>
+        <form id="form"> 
+            <input type="search" id="query" name="q" placeholder="Search...">
+          </form>
+            
+          </nav>
+
+    </div>
+    <div class="heading">
+        <h1>About Us</h1>
+        <p>Greetings from Calendria ni Tadili! Here, we offer high-quality food with a broad target market in addition to the typical street food. Our tasty yet reasonably priced food satisfies the appetites of every client. Michael Dave Tadili founded the company in November 2023.</p>
+    </div>
+    <div class="container">
+        <section class="about">
+            <div class="about-image">
+            <img src="images/aboutusimage.jpg" alt="logo">
+        </div>
+        <div class="about-content">
+            <h2>At Calendria Ni Tadili, we believe that great food brings people together. Our menu is carefully crafted to offer something for everyone, from traditional street food favorites to innovative new dishes that reflect our commitment to quality and flavor. Each dish is prepared with the freshest ingredients and a passion for culinary excellence.</h2>
+        </div>
+        </section>
+    </div>
+               <footer>
+                <div class="footer-container">
+                    <div class="logo">
+                        <img src="images/img.1.png" alt="Tadili">
+                    </div>
+                    <div class="footer-description">
+                        <p>Welcome to Carinderia ni Tadili! Here, we offer high-quality food that appeals to a broad consumer base rather than just the typical street fare.</p>
+                    </div>
+                    <div class="navigation">
+                        <ul>
+                            <li><a href="home.html">Home</a></li>
+                            <li><a href="aboutme.html">About Us</a></li>
+                            <li><a href="product.html">Products</a></li>
+                            <li><a href="#">Franchising</a></li>
+                            <li><a href="https://g.co/kgs/eeGDNbe">Store Location</a></li>
+                            <li><a href="images/sisigsilog.jpg">What's New</a></li>
+                            <li><a href="#">Videos</a></li>
+                            <li><a href="#">Contact Us</a></li>
+                        </ul>
+                    </div>
+                    <div class="social-media">
+                        <a href="https://web.facebook.com/profile.php?id=100057534006288"><ion-icon size="large" name="logo-facebook"></ion-icon></a>
+                        <a href="https://www.instagram.com/"><ion-icon size="large" name="logo-instagram"></ion-icon></a>
+                        <a href="https://www.tiktok.com/"><ion-icon size="large" name="logo-tiktok"></ion-icon></a>
+                    </div>
+                </div>
+            </footer>
+    
+    
+            <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+            <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+
+<script>
+    
+    document.querySelectorAll('.showPopup').forEach(button => {
+            button.addEventListener('click', () => {
+                const popup = button.parentElement.nextElementSibling;
+                popup.classList.add('active');
+                popup.style.display = 'block';
+
+                setTimeout(() => {
+                    popup.classList.remove('active');
+
+                    setTimeout(() => {
+                        popup.style.display = 'none';
+                    }, 500); // Match the transition duration
+                }, 1000); // 1-second delay
+            });
+        });
+    document.addEventListener('DOMContentLoaded', function() {
+            const footerLinks = document.querySelectorAll('.footer-column ul li a');
+
+            footerLinks.forEach(link => {
+                link.addEventListener('click', function(event) {
+                    event.preventDefault();
+                    const url = this.getAttribute('href');
+                    window.open(url, 'https://www.google.com/');
+                });
+            });
+        });
+</script>
+</body>
+</html>
+
+
